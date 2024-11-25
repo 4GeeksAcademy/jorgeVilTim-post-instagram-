@@ -2,12 +2,12 @@
 
 /*____________añadiendo bordes a todo para ver sepaciones _________________*/
 
-*{
+/**{
   margin: 0px;
   padding: 0px;
   border: 1px dashed black;  
 }
-
+*/
 
 /*____________Que body ocupe toda la pagina  _________________*/
 body{
@@ -17,6 +17,8 @@ body{
     position: absolute;
     align-items: center;
     background-color: bisque;
+    display: flex;
+    align-content: center;
 }
 
 
@@ -25,21 +27,23 @@ body{
 .container{
 margin: 0px 30% ;
 margin-top: 20px;
-height: 440px;
+height: 430px;
 display: flex;
 display: block;
-position: absolute;
+position: relative;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 /*align-items: center;*/
-background-color: aqua;
+background-color: rgb(0, 255, 238);
 }
 
          /*____________________________________HEADER________________________________________________________*/
          .header{
           width: 300px;
           height: 50px;
-          background-color: chartreuse;
+          background-color: rgb(255, 255, 255);
           display: flex;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
@@ -47,36 +51,41 @@ background-color: aqua;
 
                             /*_____*/.header___img1{
                              width: 30px;
-                             border-top-left-radius: 10px;
-                             
-                             
+                             border-top-left-radius: 9px;
                              height: inherit;
-                             position: absolute;
+                             position: relative;
                              background-color: #574db8;
+                             font-size: 25px;/*tamaño de icono html*/
+                             align-content: center;
+                             padding-left: 10px;
                              
 }
 
 
                              /*_____*/.header___p{
-                             width: 30px;
+                             margin: 0;
+                             padding: 0;
+                             width: 69px;
                              height: inherit;
-                             position: absolute;
-                             top: 0;
-                             left: 30px;
+                             position: relative;
+                             top: 30;
+                             left: 0;
+                             align-content: center;
                              background-color: hsl(33, 51%, 56%);
         
     }
 
                               /*_____*/.header___img2{
-                              width: 30px;
-                             height: inherit;
-                             font-size: 25px;
-                             position: absolute; /* Sacamos al hijo del flujo normal */
+                              width: 20px; /*ancho del div de los puntos */
+                             height: inherit;/* hereda la altura del div header */
+                             font-size: 25px; /* agranda el tamaño del contenido en este caso el icono*/
+                             position: relative; /* cogemos la posicion base absoluta del div header */
                              top: 0;             /* Lo alineamos al tope del padre */
-                             right: 0;           /* Extenderlo hasta el borde derecho */
-                             background-color: rgb(107, 113, 107);
+                             left: 161px;           /* Extenderlo hasta el borde derecho */
+                             background-color: rgb(107, 113, 107);/*quitar para presentar ya que se usa exclusivamente para orientarnos*/
                              border-top-right-radius: 10px;
-                             
+                             align-content: center; /*para centrar el icono dearriba y por abajo al contenido del div img2*/ 
+                             padding-left: 10px;
         
     }
 
@@ -106,7 +115,8 @@ background-color: aqua;
         height: 100px;
         display: flex;
         display: block;
-       
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         background-color: yellow;
      }
                 .footer___icons{
@@ -114,6 +124,7 @@ background-color: aqua;
                     width: 300px;
                     height: 30px;
                     display: flex;
+
                    
                  
      }
@@ -134,6 +145,7 @@ background-color: aqua;
                                     width: 30px;
                                     height: 30px;
                                     position: relative;
+                                    font-size: 25px;
                                     background-color: rgb(107, 113, 107);
                                    
               
@@ -143,17 +155,20 @@ background-color: aqua;
                                     width: 30px;
                                     height: 30px;
                                     position: relative;
+                                    font-size: 25px;
                                     background-color: rgb(107, 113, 107);
                                        
                   
               }
                                   /*_____*/.footer .footer___icons .icons___flag{
                                     margin: 0;
-                                    width: 30px;
+                                    padding-left: 5px;
+                                    width: 25px;
                                     height: 30px;
                                     position: relative;
                                     top: 0;             /* Lo alineamos al tope del padre */
                                     left: 170px;
+                                    font-size: 25px;
                                     background-color: rgb(107, 113, 107);
                                            
                       
@@ -170,9 +185,11 @@ background-color: aqua;
                                   /*_____*/.footer .footer___p2{
                                     margin: 0;
                                     width: inherit;
-                                    height: inherit;
+                                    height: 100px;
                                     position: relative;
-                                    background-color: rgb(143, 29, 108);
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                    background-color: #ddcfd9;
                                            
                       
                   }
