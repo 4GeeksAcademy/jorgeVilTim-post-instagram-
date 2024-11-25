@@ -23,11 +23,14 @@ body{
 /*____________usando el primer flexbox para posicionar cajas header, main y footer  y container que ocupe toda la pagina_________________*/
 
 .container{
-margin: 0px 30%;
+margin: 0px 30% ;
+margin-top: 20px;
 height: 440px;
 display: flex;
 display: block;
 position: absolute;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 /*align-items: center;*/
 background-color: aqua;
 }
@@ -38,11 +41,15 @@ background-color: aqua;
           height: 50px;
           background-color: chartreuse;
           display: flex;
-          
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
           }
 
                             /*_____*/.header___img1{
                              width: 30px;
+                             border-top-left-radius: 10px;
+                             
+                             
                              height: inherit;
                              position: absolute;
                              background-color: #574db8;
@@ -63,10 +70,12 @@ background-color: aqua;
                               /*_____*/.header___img2{
                               width: 30px;
                              height: inherit;
+                             font-size: 25px;
                              position: absolute; /* Sacamos al hijo del flujo normal */
                              top: 0;             /* Lo alineamos al tope del padre */
                              right: 0;           /* Extenderlo hasta el borde derecho */
                              background-color: rgb(107, 113, 107);
+                             border-top-right-radius: 10px;
                              
         
     }
@@ -114,6 +123,7 @@ background-color: aqua;
                                     width: 30px;
                                     height: inherit;
                                     position: relative;
+                                    font-size: 25px;
                                     background-color: rgb(107, 113, 107);
                                    
               
