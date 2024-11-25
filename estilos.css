@@ -1,0 +1,168 @@
+
+
+/*____________añadiendo bordes a todo para ver sepaciones _________________*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 1px dashed black;  
+}
+
+
+/*____________Que body ocupe toda la pagina  _________________*/
+body{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    align-items: center;
+    background-color: bisque;
+}
+
+
+/*____________usando el primer flexbox para posicionar cajas header, main y footer  y container que ocupe toda la pagina_________________*/
+
+.container{
+margin: 0px 30%;
+height: 440px;
+display: flex;
+display: block;
+position: absolute;
+/*align-items: center;*/
+background-color: aqua;
+}
+
+         /*____________________________________HEADER________________________________________________________*/
+         .header{
+          width: 300px;
+          height: 50px;
+          background-color: chartreuse;
+          display: flex;
+          
+          }
+
+                            /*_____*/.header___img1{
+                             width: 30px;
+                             height: inherit;
+                             position: absolute;
+                             background-color: #574db8;
+                             
+}
+
+
+                             /*_____*/.header___p{
+                             width: 30px;
+                             height: inherit;
+                             position: absolute;
+                             top: 0;
+                             left: 30px;
+                             background-color: hsl(33, 51%, 56%);
+        
+    }
+
+                              /*_____*/.header___img2{
+                              width: 30px;
+                             height: inherit;
+                             position: absolute; /* Sacamos al hijo del flujo normal */
+                             top: 0;             /* Lo alineamos al tope del padre */
+                             right: 0;           /* Extenderlo hasta el borde derecho */
+                             background-color: rgb(107, 113, 107);
+                             
+        
+    }
+
+
+
+    /*____________________________________MAIN________________________________________________________*/
+    .main{
+        width: 300px;
+        height: 200px;
+        padding: 0;
+        background-color: pink;
+        
+     }
+
+                              /*_____*/.main .main___img{
+                              margin: 0;
+                              width: inherit;
+                              height: inherit;
+                              position: absolute;
+                              background-color: rgb(107, 113, 107);
+                             
+        
+    }
+    /*____________________________________FOOTER________________________________________________________*/
+    .footer{
+        width: 300px;
+        height: 100px;
+        display: flex;
+        display: block;
+       
+        background-color: yellow;
+     }
+                .footer___icons{
+                    margin: 0;
+                    width: 300px;
+                    height: 30px;
+                    display: flex;
+                   
+                 
+     }
+
+                                /*_____*/.footer .footer___icons .icons___heart{
+                                    margin: 0;
+                                    width: 30px;
+                                    height: inherit;
+                                    position: relative;
+                                    background-color: rgb(107, 113, 107);
+                                   
+              
+          }
+                                    
+                                 /*_____*/.footer .footer___icons .icons___comment{
+                                    margin: 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    position: relative;
+                                    background-color: rgb(107, 113, 107);
+                                   
+              
+          }
+                                  /*_____*/.footer .footer___icons .icons___paperPlain{
+                                    margin: 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    position: relative;
+                                    background-color: rgb(107, 113, 107);
+                                       
+                  
+              }
+                                  /*_____*/.footer .footer___icons .icons___flag{
+                                    margin: 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    position: relative;
+                                    top: 0;             /* Lo alineamos al tope del padre */
+                                    left: 170px;
+                                    background-color: rgb(107, 113, 107);
+                                           
+                      
+                  }
+                                  /*_____*/.footer  .footer___p1{
+                                    margin: 0;
+                                    width: inherit;
+                                    height: 50px;
+                                    position: relative;
+                                    background-color: rgb(143, 29, 108);
+                                           
+                      
+                  }
+                                  /*_____*/.footer .footer___p2{
+                                    margin: 0;
+                                    width: inherit;
+                                    height: inherit;
+                                    position: relative;
+                                    background-color: rgb(143, 29, 108);
+                                           
+                      
+                  }

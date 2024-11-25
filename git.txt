@@ -3,3 +3,7 @@ git add .
 git commit -m "mi mensaje"
 
 git push origin main 
+
+# un comando mas 
+
+git status
